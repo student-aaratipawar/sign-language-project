@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prediction Result</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>🤚 Prediction Result</h1>
+  <img src="{{ image_path }}" width="400"><br><br>
+  <h2>Detected Gesture: <span style="color: #00ff88;">{{ gesture }}</span></h2>
+  <br>
+  <a href="/upload">Try Another Image</a> |
+  <a href="/">Back to Home</a>
+</body>
+</html>
